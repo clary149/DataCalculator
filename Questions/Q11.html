@@ -12,10 +12,14 @@
       <p>In the past month, how often have you used public wifi?</p>
       <div class="responses">
         <label for="response">Never</label>
-        <input type="range" name="response" id="response" min="0" max="10"></input>
+        <input type="range" name="response" id="response" min="0" max="10" oninput='advice()'></input>
         <label for="response">Everyday</label>
       </div>
     </div>
+    <p id="advice" style="opacity: 0;">Advice: Using public wifi in itself is fine. Make sure you 
+    do not access any sensitive information while on public wifi since anyone has the ability to see the data 
+    that you access over the internet.</p>
+    <script src="questions.js"></script>
   </body>
   <div class="button">
     <button><a href="../Questions/Q10.html">Back</a></button>

@@ -11,10 +11,16 @@
     <div class="question">
       <p>Do you have two factor authentication enabled on most apps that allow it?</p>
       <div class="responses">
-        <input type="radio" name="response">Yes</input>
+        <input type="radio" name="response" oninput=advice()>Yes</input>
         <br>
-        <input type="radio" name="response">No</input>
+        <input type="radio" name="response" oninput=advice()>No</input>
+        <br>
       </div>
+      <p id="advice" style="opacity: 0;">Advice: Whenever possible, 2-factor authentication should always be enabled
+        to ensure that someone else isn't logging in through your account. It enables you to confirm whether or 
+        not you are logging in</p>
+
+      <script src="questions.js"></script>
     </div>
     <div class="button">
       <button><a href="../Questions/Q2.html">Back</a></button>

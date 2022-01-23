@@ -12,18 +12,25 @@
     <div class="question">
       <p>How much sensitive information have you provided over the internet/email/phone in the past month? Select all that apply.</p>
       <div class="responses">
-        <input type="checkbox" name="response">SSN</input>
+        <input type="checkbox" name="response" oninput="advice()">SSN</input>
         <br>
-        <input type="checkbox" name="response">Address</input>
+        <input type="checkbox" name="response" oninput="advice()">Address</input>
         <br>
-        <input type="checkbox" name="response">Bank Account info</input>
+        <input type="checkbox" name="response" oninput="advice()">Bank Account info</input>
         <br>
-        <input type="checkbox" name="response">Passwords</input>
+        <input type="checkbox" name="response" oninput="advice()">Passwords</input>
         <br>
-        <input type="checkbox" name="response">Lock combination</input>
+        <input type="checkbox" name="response" oninput="advice()">Lock combination</input>
+        <br>
+        <p id="advice" style="opacity: 0;">Advice:
+          You should minimize sharing sensitive information over the internet, email, and phone. If any 
+          forms of those communications were to be compromised, you will be exposing that information.
+        </p>
       </div>
     </div>
-      
+    <p id="advice" style="opacity: 0;" >Advice</p>
+
+    <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q7.html">Back</a></button>
       <button><a href="../Questions/Q9.html">Next</a></button>
