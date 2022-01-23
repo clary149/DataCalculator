@@ -7,15 +7,15 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>Out of the following links, which link will be the safest to click?</p>
       <div class="responses">
-        <input type="radio" name="response" oninput="advice()">Https://random.com</input>
+        <input id="Q15Average" type="radio" name="response" oninput="advice()">Https://random.com</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">https://random.com</input>
+        <input id="Q15Best" type="radio" name="response" oninput="advice()">https://random.com</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">random.com</input>
+        <input id="Q15Worst" type="radio" name="response" oninput="advice()">random.com</input>
       </div>
       
      
@@ -34,5 +34,5 @@
       </div>
     </div>
   </body>
-  
+  <script src="../index.js"></script>
 </html>

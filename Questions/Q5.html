@@ -7,7 +7,7 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>How often do you install software updates for your devices?</p> 
       <div class="responses">
@@ -21,15 +21,15 @@
   and security patches.</p>
 
     <script src="questions.js"></script>
+
+    <div class="button">
+      <button><a href="../Questions/Q4.html">Back</a></button>
+      <button><a href="../Questions/Q6.html" onclick="updatePointsQ5()">Next</a></button>
+    </div>
+    <div id="myProgress">
+      <div id="myTriangle">
+    </div>
   </body>
 
-
-
-  <div class="button">
-    <button><a href="../Questions/Q4.html">Back</a></button>
-    <button><a href="../Questions/Q6.html">Next</a></button>
-  </div>
-  <div id="myProgress">
-    <div id="myTriangle">
-  </div>
+  <script src="../index.js"></script>
 </html>

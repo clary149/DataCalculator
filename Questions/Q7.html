@@ -7,7 +7,7 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>How often do you change your passwords?</p>
       <div class="responses">
@@ -23,13 +23,12 @@
     </p>
     <script src="questions.js"></script>
   </body>
-  
-  <div class="button">
+  <div class="button" >
     <button><a href="../Questions/Q6.html">Back</a></button>
-    <button><a href="../Questions/Q8.html">Next</a></button>
+    <button><a href="../Questions/Q8.html" onclick="updatePointsQ7()">Next</a></button>
   </div>
   <div id="myProgress">
     <div id="myTriangle">
   </div>
-  
+  <script src="../index.js"></script>
 </html>

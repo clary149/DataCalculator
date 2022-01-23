@@ -7,13 +7,13 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>Do you have two factor authentication enabled on most apps that allow it?</p>
       <div class="responses">
         <input type="radio" name="response" oninput=advice()>Yes</input>
         <br>
-        <input type="radio" name="response" oninput=advice()>No</input>
+        <input type="radio" id="Q3Worst" name="response" oninput=advice()>No</input>
         <br>
       </div>
       <p id="advice" style="opacity: 0;">Advice: Whenever possible, 2-factor authentication should always be enabled
@@ -24,7 +24,7 @@
     </div>
     <div class="button">
       <button><a href="../Questions/Q2.html">Back</a></button>
-      <button><a href="../Questions/Q4.html">Next</a></button>
+      <button><a href="../Questions/Q4.html" onclick="updatePointsQ3()">Next</a></button>
     </div>
 
     <div id="myProgress">
@@ -33,5 +33,6 @@
     </div>
 
   </body>
+  <script src="../index.js"></script>
   
 </html>

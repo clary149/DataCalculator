@@ -7,16 +7,15 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>In your settings, how often do you allow location tracking?</p>
       <div class="responses">
-        <input type="radio" name="response" oninput="advice()">Only when using app</input>
+        <input id="Q2Average" type="radio" name="response" oninput="advice()">Only when using app</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">Always</input>
+        <input id="Q2Worst" type="radio" name="response" oninput="advice()">Always</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">Never</input>
-        <br>
+        <input id="Q2Best" type="radio" name="response" oninput="advice()">Never</input>
       </div>
       <p id="advice" style="opacity: 0;">Advice: Sharing your location only when using an app prevents
         companies from knowing where you are at all times. For unknown websites, you should never share your location.</p>
@@ -27,13 +26,15 @@
     </div>
     <div>
       <button><a href="../Questions/Q1.html">Back</a></button>
-      <button><a href="../Questions/Q3.html">Next</a></button>
+      <button><a href="../Questions/Q3.html" onclick="updatePointsQ2()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
       </div>
     </div>
   </body>
+  <script src="../index.js"></script>
+  
   
   
 </html>

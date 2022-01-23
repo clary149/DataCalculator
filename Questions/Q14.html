@@ -7,14 +7,14 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
-	<script src="index.js"></script>
+  <body onload="getPoints()">
+	
     <div class="question">
       <p>Do your devices still use the default password?</p>
       <div class="responses">
-        <input type="radio" name="response" oninput="advice()">Yes</input>
+        <input id="Q14Worst" type="radio" name="response" oninput="advice()">Yes</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">No</input>
+        <input id="Q14Best" type="radio" name="response" oninput="advice()">No</input>
         <br>
       </div>
     </div>
@@ -24,11 +24,12 @@
     <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q13.html">Back</a></button>
-      <button><a href="../Questions/Q15.html">Next</a></button>
+      <button><a href="../Questions/Q15.html" onclick="updatePointsQ14()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
       </div>
     </div>
   </body>
+  <script src="../index.js"></script>
 </html>

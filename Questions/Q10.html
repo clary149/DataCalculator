@@ -7,13 +7,13 @@
     <title>Data Calculator</title>
     <link rel="stylesheet" href="../style.css">
   </head>
-  <body>
+  <body onload="getPoints()">
     <div class="question">
       <p>Do you have antivirus software installed on your device?</p>
       <div class="responses">
-        <input type="radio" name="response" oninput="advice()">Yes</input>
+        <input id="Q10Best" type="radio" name="response" oninput="advice()">Yes</input>
         <br>
-        <input type="radio" name="response" oninput="advice()">No</input>
+        <input id="Q10Worst" type="radio" name="response" oninput="advice()">No</input>
       </div>
     </div>
     <p id="advice" style="opacity: 0;" >Advice: Antivirus software detects and removes viruses and other malicious software from your device.
@@ -22,12 +22,12 @@
       <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q9.html">Back</a></button>
-      <button><a href="../Questions/Q11.html">Next</a></button>
+      <button><a href="../Questions/Q11.html" onclick="updatePointsQ10()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
       </div>
     </div>
   </body>
-  
+  <script src="../index.js"></script>
 </html>
