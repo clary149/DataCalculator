@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -7,19 +8,30 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <p>How much sensitive information have you provided over the internet/email/phone in the past month? Select all that apply.</p>
-    <br>
-    <input type="checkbox" name="response">SSN</input>
-    <br>
-    <input type="checkbox" name="response">Address</input>
-    <br>
-    <input type="checkbox" name="response">Bank Account info</input>
-    <br>
-    <input type="checkbox" name="response">Passwords</input>
-    <br>
-    <input type="checkbox" name="response">Lock combination</input>
-
+    <script src="index.js"></script>
+    <div class="question">
+      <p>How much sensitive information have you provided over the internet/email/phone in the past month? Select all that apply.</p>
+      <div class="responses">
+        <input type="checkbox" name="response">SSN</input>
+        <br>
+        <input type="checkbox" name="response">Address</input>
+        <br>
+        <input type="checkbox" name="response">Bank Account info</input>
+        <br>
+        <input type="checkbox" name="response">Passwords</input>
+        <br>
+        <input type="checkbox" name="response">Lock combination</input>
+      </div>
+    </div>
+      
+    <div class="button">
+      <button><a href="../Questions/Q7.html">Back</a></button>
+      <button><a href="../Questions/Q9.html">Next</a></button>
+    </div>
+    <div id="myProgress">
+      <div id="myTriangle">
+      </div>
+    </div>  
   </body>
-  <button><a href="../Questions/Q7.html">Back</a></button>
-  <button><a href="../Questions/Q9.html">Next</a></button>
+  
 </html>
