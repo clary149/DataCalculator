@@ -11,13 +11,20 @@
     <div class="question">
       <p>Out of the following links, which link will be the safest to click?</p>
       <div class="responses">
-        <input type="radio" name="response">Https://random.com</input>
+        <input id="Q15Average" type="radio" name="response" oninput="advice()">Https://random.com</input>
         <br>
-        <input type="radio" name="response">https://random.com</input>
+        <input id="Q15Best" type="radio" name="response" oninput="advice()">https://random.com</input>
         <br>
-        <input type="radio" name="response">random.com</input>
+        <input id="Q15Worst" type="radio" name="response" oninput="advice()">random.com</input>
       </div>
+      
+     
     </div>
+    <p id="advice" style="opacity: 0;">Advice: When accessing sensitive information (such as when banking and shopping),
+      check to be sure the site's security is enabled with web addresses starting with “https://” which means the site takes 
+      extra measures to help secure your information. “Http://” is not secure.
+    </p>
+    <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q14.html">Back</a></button>
     </div>
@@ -26,5 +33,5 @@
       </div>
     </div>
   </body>
-  
+  <script src="../index.js"></script>
 </html>

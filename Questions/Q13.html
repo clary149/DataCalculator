@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body onload="getPoints()">
-	<script src="index.js"></script>
+	
     <div class="question">
       <p>Select the links that you think are safe:</p>
       <div class="responses">
-        <input type="checkbox" name="response">https://www.amazon.com/</input>
+        <input type="checkbox" id="Q13A" name="response" oninput="advice()">https://www.amazon.com/</input>
         <br>
-        <input type="checkbox" name="response">https://www.amazon.con/</input>
+        <input type="checkbox" id="Q13B" name="response" oninput="advice()">https://www.amazon.con/</input>
         <br>
-        <input type="checkbox" name="response">https://www.freelotterytickets.com/</input>
+        <input type="checkbox" id="Q13C" name="response" oninput="advice()">https://www.freelotterytickets.com/</input>
         <br>
-        <input type="checkbox" name="response">https://www.s0cialsecurityadministration.com/</input>
+        <input type="checkbox" id="Q13D" name="response" oninput="advice()">https://www.s0cialsecurityadministration.com/</input>
+        <br>
       </div>
     </div>
+    <p id="advice" style="opacity: 0;">Advice: always check links for typos as scammers will try to lure you into clicking a link that 
+    you think is familiar and safe but that might actually be malicious. 
+    </p>
+
+    <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q12.html">Back</a></button>
-      <button><a href="../Questions/Q14.html">Next</a></button>
+      <button><a href="../Questions/Q14.html" onclick="updatePointsQ13()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
     </div>
   </body>
+  <script src="../index.js"></script>
 </html>

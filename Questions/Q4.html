@@ -11,21 +11,25 @@
     <div class="question">
       <p>Do you have a recovery phone/email set up for your accounts?</p>
       <div class="responses">
-        <input type="radio" name="response">Yes</input>
+        <input id="Q4Best" type="radio" name="response" oninput=advice()>Yes</input>
         <br>
-        <input type="radio" name="response">No</input>
+        <input id="Q4Worst" type="radio" name="response" oninput=advice()>No</input>
       </div>
+      <p id="advice" style="opacity: 0;" >Advice: Having a recovery email or a phone number allows you to recover your account
+      in case your account gets hacked.</p>
+
+      <script src="questions.js"></script>
     </div>
     <div>
       <button><a href="../Questions/Q3.html">Back</a></button>
-      <button><a href="../Questions/Q5.html">Next</a></button>
+      <button><a href="../Questions/Q5.html" onclick="updatePointsQ4()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
       </div>
     </div>
-  
 
   </body>
+  <script src="../index.js"></script>
   
 </html>
