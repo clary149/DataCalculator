@@ -7,7 +7,7 @@
 }
   
 #myTriangle {
-    margin-left: 90%;
+    margin-left: 95%;
     width: 25px;
     height: 25px;
     background-image: url('triangle-slider4.png');
@@ -16,4 +16,6 @@
     background-repeat: no-repeat;
 
 }
+
+
 
