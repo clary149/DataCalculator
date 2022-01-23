@@ -10,7 +10,7 @@
   <body onload="getPoints()">
     
     <div class="question">
-      <p>How much sensitive information have you provided over the internet/email/phone in the past month? Select all that apply.</p>
+      <p>8. How much sensitive information have you provided over the internet/email/phone in the past month? Select all that apply.</p>
       <div class="responses">
         <input id="Q8A" type="checkbox" name="response" oninput="advice()">SSN</input>
         <br>
@@ -22,12 +22,12 @@
         <br>
         <input id="Q8E" type="checkbox" name="response" oninput="advice()">Lock combination</input>
         <br>
-        <p id="advice" style="opacity: 0;">Advice:
-          You should minimize sharing sensitive information over the internet, email, and phone. If any 
-          forms of those communications were to be compromised, you will be exposing that information.
-        </p>
       </div>
     </div>
+    <p id="advice" style="opacity: 0;">Advice:
+      You should minimize sharing sensitive information over the internet, email, and phone. If any 
+      of those forms of communication were to be compromised, you would be exposing that information.
+    </p>
     <p id="advice" style="opacity: 0;" >Advice</p>
 
     <script src="questions.js"></script>

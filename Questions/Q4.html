@@ -9,17 +9,17 @@
   </head>
   <body onload="getPoints()">
     <div class="question">
-      <p>Do you have a recovery phone/email set up for your accounts?</p>
+      <p>4. Do you have a recovery phone/email set up for your accounts?</p>
       <div class="responses">
         <input id="Q4Best" type="radio" name="response" oninput=advice()>Yes</input>
         <br>
         <input id="Q4Worst" type="radio" name="response" oninput=advice()>No</input>
       </div>
-      <p id="advice" style="opacity: 0;" >Advice: Having a recovery email or a phone number allows you to recover your account
-      in case your account gets hacked.</p>
 
       <script src="questions.js"></script>
     </div>
+    <p id="advice" style="opacity: 0;" >Advice: Having a recovery email or phone number allows you to recover your account
+      in case it gets hacked.</p>
     <div>
       <button><a href="../Questions/Q3.html">Back</a></button>
       <button><a href="../Questions/Q5.html" onclick="updatePointsQ4()">Next</a></button>

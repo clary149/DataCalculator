@@ -9,7 +9,7 @@
   </head>
   <body onload="getPoints()">
     <div class="question">
-      <p>Out of the following links, which link will be the safest to click?</p>
+      <p>15. Out of the following links, which link will be the safest to click?</p>
       <div class="responses">
         <input id="Q15Average" type="radio" name="response" oninput="advice()">Https://random.com</input>
         <br>
@@ -20,14 +20,14 @@
       
      
     </div>
-    <p id="advice" style="opacity: 0;">Advice: When accessing sensitive information (such as when banking and shopping),
-      check to be sure the site's security is enabled with web addresses starting with “https://” which means the site takes 
-      extra measures to help secure your information. “Http://” is not secure.
+    <p id="advice" style="opacity: 0;">Advice: When accessing sensitive information (i.e. when banking and shopping),
+      make sure the site's security is enabled with web addresses starting with “https://”, meaning that the site takes 
+      extra measures to secure your information. “Http://” is not secure.
     </p>
     <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q14.html">Back</a></button>
-      <button><a href="../Endpage/Resources.html">Next</a></button>
+      <button><a href="../Endpage/Resources.html" onclick="updatePointsQ15()">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
