@@ -11,20 +11,20 @@
     <div class="question">
       <p>How many social media accounts do you have?</p>
       <div class="responses">
-        <input type="range" value="5" min='0' max='10' step='1' oninput="this.nextElementSibling.value = this.value"></input>
+        <input id="Q1" type="range" value="5" min='0' max='10' step='1' oninput="this.nextElementSibling.value = this.value"></input>
         <output>5</output>
       </div>
       
     </div>
     <div class="button">
-      <button><a href="../Questions/Q2.html">Next</a></button>
+      <button onclick="updatePoints()"><a href="../Questions/Q2.html">Next</a></button>
     </div>
     <div id="myProgress">
       <div id="myTriangle">
       </div>
     </div>
   </body>
-
+  <script src="../index.js"></script>
   
 
 </html>

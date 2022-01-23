@@ -20,14 +20,13 @@ body {
 }
 
 #myTriangle {
-  margin-left: 95%;
   width: 25px;
   height: 25px;
   background-image: url('./Scale/triangle-slider4.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  
 }
 
 .question {
