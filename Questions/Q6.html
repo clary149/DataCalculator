@@ -9,16 +9,15 @@
   </head>
   <body onload="getPoints()">
     <div class="question">
-      <p>How many accounts of yours use the same password?</p> 
+      <p>6. How many accounts of yours use the same password?</p> 
       <div class="responses">
         <label for="response">None</label>
         <input type="range" name="response" id="response" min="0" max="10" oninput='advice()'></input>
         <label for="response">All</label>
       </div>
     </div>
-
     <p id="advice" style="opacity: 0;">Advice: Having the same passwords for multiple accounts puts all of those accounts at risk. 
-      If one account gets breached, the hacker will have the password to your other accounts.
+      If one account is hacked, the hacker will have the password to your other accounts.
     </p>
 
     <script src="questions.js"></script>

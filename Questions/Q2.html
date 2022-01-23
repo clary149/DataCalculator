@@ -9,7 +9,7 @@
   </head>
   <body onload="getPoints()">
     <div class="question">
-      <p>In your settings, how often do you allow location tracking?</p>
+      <p>2. In your settings, how often do you allow location tracking?</p>
       <div class="responses">
         <input id="Q2Average" type="radio" name="response" oninput="advice()">Only when using app</input>
         <br>
@@ -17,13 +17,15 @@
         <br>
         <input id="Q2Best" type="radio" name="response" oninput="advice()">Never</input>
       </div>
-      <p id="advice" style="opacity: 0;">Advice: Sharing your location only when using an app prevents
-        companies from knowing where you are at all times. For unknown websites, you should never share your location.</p>
+      
       <script 
       src="questions.js">
     </script>
 
     </div>
+    <p id="advice" style="opacity: 0;">Advice: Sharing your location only when using an app prevents
+      companies from knowing where you are at all times. For unknown websites, you should never share your location.</p>
+
     <div>
       <button><a href="../Questions/Q1.html">Back</a></button>
       <button><a href="../Questions/Q3.html" onclick="updatePointsQ2()">Next</a></button>
