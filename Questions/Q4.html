@@ -11,10 +11,14 @@
     <div class="question">
       <p>Do you have a recovery phone/email set up for your accounts?</p>
       <div class="responses">
-        <input type="radio" name="response">Yes</input>
+        <input type="radio" name="response" oninput=advice()>Yes</input>
         <br>
-        <input type="radio" name="response">No</input>
+        <input type="radio" name="response" oninput=advice()>No</input>
       </div>
+      <p id="advice" style="opacity: 0;" >Advice: Having a recovery email or a phone number allows you to recover your account
+      in case your account gets hacked.</p>
+
+      <script src="questions.js"></script>
     </div>
     <div>
       <button><a href="../Questions/Q3.html">Back</a></button>

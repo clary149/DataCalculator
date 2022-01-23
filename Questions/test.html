@@ -16,7 +16,7 @@
     <br>
     <input type="radio" name="response" oninput="advice()">Never</input>
     <br>
-    <input type="range" value="5" min='0' max='10' step='1'  oninput="advice()"></input>
+    <input type="range" value="5" min='0' max='10' step='1' oninput="advice()"></input>
     <output>5</output>
 
     <br>
@@ -25,7 +25,8 @@
 
     <script>
       function advice(){
-        
+        // document.getElementById('inpu').nextElementSibling.value = document.getElementById('inpu').value
+        // slider id for above
         document.getElementById("advice").style.opacity = "1";
       }
     </script>

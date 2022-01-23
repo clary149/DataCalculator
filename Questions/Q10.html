@@ -11,11 +11,15 @@
     <div class="question">
       <p>Do you have antivirus software installed on your device?</p>
       <div class="responses">
-        <input type="radio" name="response">Yes</input>
+        <input type="radio" name="response" oninput="advice()">Yes</input>
         <br>
-        <input type="radio" name="response">No</input>
+        <input type="radio" name="response" oninput="advice()">No</input>
       </div>
     </div>
+    <p id="advice" style="opacity: 0;" >Advice: Antivirus software detects and removes viruses and other malicious software from your device.
+    Additionally, make sure to keep it up to date to protect your data and devices. </p>
+
+      <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q9.html">Back</a></button>
       <button><a href="../Questions/Q11.html">Next</a></button>

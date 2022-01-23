@@ -12,10 +12,17 @@
       <p>How many accounts of yours use the same password?</p> 
       <div class="responses">
         <label for="response">None</label>
-        <input type="range" name="response" id="response" min="0" max="10"></input>
+        <input type="range" name="response" id="response" min="0" max="10" oninput='advice()'></input>
         <label for="response">All</label>
       </div>
     </div>
+
+    <p id="advice" style="opacity: 0;">Advice: Having the same passwords for multiple accounts puts all of those accounts at risk. 
+      If one account gets breached, the hacker will have the password to your other accounts
+    </p>
+
+    <script src="questions.js"></script>
+
     <div class="button">
       <button><a href="../Questions/Q5.html">Back</a></button>
       <button><a href="../Questions/Q7.html">Next</a></button>

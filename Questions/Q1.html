@@ -11,10 +11,12 @@
     <div class="question">
       <p>How many social media accounts do you have?</p>
       <div class="responses">
-        <input type="range" value="5" min='0' max='10' step='1' oninput="this.nextElementSibling.value = this.value"></input>
+        <input id='change'type="range" value="5" min='0' max='10' step='1' oninput="adviceChange()"></input>
         <output>5</output>
       </div>
-      
+      <p id="advice" style="opacity: 0;">Advice: Minimize the information you send on your social media accounts</p>
+
+      <script src="questions.js"></script>
     </div>
     <div class="button">
       <button><a href="../Questions/Q2.html">Next</a></button>

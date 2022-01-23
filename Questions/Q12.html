@@ -11,11 +11,16 @@
     <div class="question">
       <p>Do you allow accounts to save your payment method?</p>
       <div class="responses">
-        <input type="radio" name="response">Yes</input>
+        <input type="radio" name="response" oninput="advice()">Yes</input>
         <br>
-        <input type="radio" name="response">No</input>
+        <input type="radio" name="response" oninput="advice()">No</input>
+        <br>
       </div>
     </div>
+     <p id="advice" style="opacity: 0;">Advice: Allowing accounts to save your payment method can be risky 
+      in the case where your account gets hacked </p>
+
+      <script src="questions.js"></script>
     <div class="button">
       <button><a href="../Questions/Q11.html">Back</a></button>
       <button><a href="../Questions/Q13.html">Next</a></button>
