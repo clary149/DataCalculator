@@ -8,16 +8,20 @@
     <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-    <p>How often do you install software updates for your devices?</p> 
-    <br>
-    <label for="response">Never</label>
-    <input type="range" name="response" id="response" min="0" max="10"></input>
-    <label for="response">Often</label>
-
-    
-    <br>
-
+    <div class="question">
+      <p>How often do you install software updates for your devices?</p> 
+      <div class="responses">
+        <label for="response">Never</label>
+        <input type="range" name="response" id="response" min="0" max="10"></input>
+        <label for="response">Often</label>
+      </div>
+    </div>
   </body>
-  <button><a href="../Questions/Q4.html">Back</a></button>
-  <button><a href="../Questions/Q6.html">Next</a></button>
+  <div class="button">
+    <button><a href="../Questions/Q4.html">Back</a></button>
+    <button><a href="../Questions/Q6.html">Next</a></button>
+  </div>
+  <div id="myProgress">
+    <div id="myTriangle">
+  </div>
 </html>
