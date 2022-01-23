@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Data Calculator</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+        function showAdvice(x){
+            if(x==0){
+                documnet.getElementById('advice').style.display='block'
+            }
+            else{
+                documnet.getElementById('advice').style.display='none';
+            }
+            return;
+        }
+    </script>
+
+    <p>In your settings, how often do you allow location tracking?</p>
+    <br>
+    <div>
+    <input type="radio" name="response" value="option1"> Only when using app</input>
+    <br>
+    <input type="radio" name="response" value="option2" >Always</input>
+    <br>
+    <input type="radio" name="response" value="option3" >Never</input>
+    <br>
+    </div>
+    <div class="option1select">
+        <strong>Clicked</strong>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('input[type="radio"]').click(function(){
+                var inputValue=$(this).attr("value")
+            }
+        })
+
+    
+
+  </body>
+  
+  <button><a href="../Questions/Q1.html">Back</a></button>
+  <button><a href="../Questions/Q3.html">Next</a></button>
+</html>
